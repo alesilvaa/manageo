@@ -13,7 +13,7 @@ export const viewport: Viewport = {
   maximumScale: 1
 };
 
-const manrope = Manrope({ subsets: ['latin'] });
+const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope' });
 
 export default function RootLayout({
   children
@@ -22,8 +22,8 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
-      className={`bg-white dark:bg-gray-950 text-black dark:text-white ${manrope.className}`}
+      lang="es"
+      className={`bg-white dark:bg-gray-950 text-black dark:text-white ${manrope.variable}`}
     >
       <body className="min-h-[100dvh] bg-gray-50">
         <SWRConfig
