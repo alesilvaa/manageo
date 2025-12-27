@@ -8,7 +8,7 @@ export function Terminal() {
   const terminalSteps = [
     { text: 'Sistema Iniciado Correctamente', icon: Check, color: 'text-green-500', bg: 'bg-green-100' },
     { text: 'Nueva Cita: Laura M. - 16:00', icon: Calendar, color: 'text-blue-500', bg: 'bg-blue-100' },
-    { text: 'Pago Recibido: $45.00', icon: CreditCard, color: 'text-green-500', bg: 'bg-green-100' },
+    { text: 'Pago Recibido: Gs. 132.000', icon: CreditCard, color: 'text-green-500', bg: 'bg-green-100' },
     { text: 'Nuevo Cliente Agregado: Carlos R.', icon: Users, color: 'text-purple-500', bg: 'bg-purple-100' },
     { text: 'Reporte Diario Enviado', icon: ArrowRight, color: 'text-orange-500', bg: 'bg-orange-100' },
     { text: '¡Todo listo para hoy!', icon: Check, color: 'text-green-500', bg: 'bg-green-100' },
