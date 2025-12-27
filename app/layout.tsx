@@ -5,8 +5,8 @@ import { getUser, getTeamForUser } from '@/lib/db/queries';
 import { SWRConfig } from 'swr';
 
 export const metadata: Metadata = {
-  title: 'Next.js SaaS Starter',
-  description: 'Get started quickly with Next.js, Postgres, and Stripe.'
+  title: 'Manageo - Gestión Inteligente de Negocios',
+  description: 'Software especializado para la gestión de Gimnasios, Peluquerías y Centros de Estética.'
 };
 
 export const viewport: Viewport = {

@@ -72,9 +72,9 @@ function PricingCard({
         con {trialDays} días de prueba gratis
       </p>
       <p className="text-4xl font-medium text-gray-900 mb-6">
-        ${price / 100}{' '}
+        Gs. {(price / 100).toLocaleString('es-PY')}
         <span className="text-xl font-normal text-gray-600">
-          por usuario / {interval === 'month' ? 'mes' : interval}
+          {' '}/ {interval === 'month' ? 'mes' : interval}
         </span>
       </p>
       <ul className="space-y-4 mb-8">

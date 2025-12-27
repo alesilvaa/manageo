@@ -7,7 +7,7 @@ import {
   updateTeamSubscription
 } from '@/lib/db/queries';
 
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'mock_key', {
   apiVersion: '2025-04-30.basil'
 });
 
@@ -170,16 +170,16 @@ export async function getStripePrices() {
       {
         id: 'price_123',
         productId: 'prod_base',
-        unitAmount: 800,
-        currency: 'usd',
+        unitAmount: 10000000, // 100,000 Gs (assuming 100 divisor in display, so 100000 * 100)
+        currency: 'pyg',
         interval: 'month',
         trialPeriodDays: 7,
       },
       {
         id: 'price_456',
         productId: 'prod_plus',
-        unitAmount: 1200,
-        currency: 'usd',
+        unitAmount: 20000000,
+        currency: 'pyg',
         interval: 'month',
         trialPeriodDays: 7,
       },
