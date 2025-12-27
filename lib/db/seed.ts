@@ -70,7 +70,11 @@ async function seed() {
     role: 'owner',
   });
 
-  await createStripeProducts();
+  try {
+    await createStripeProducts();
+  } catch (error) {
+    console.warn('Failed to create Stripe resources (likely due to missing keys). Skipping...');
+  }
 }
 
 seed()

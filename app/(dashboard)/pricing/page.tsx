@@ -41,7 +41,7 @@ export default async function PricingPage() {
           features={[
             'Todo lo del Plan Básico, y:',
             'Acceso Anticipado a Funciones',
-            'Soporte 24/7 + Acceso a Slack',
+            'Soporte 24/7',
           ]}
           priceId={plusPrice?.id}
         />
